@@ -464,7 +464,23 @@ footer p {
 
 .profile-picture {
   clip-path: circle(50% at 50% 50%);
-  width: 150px; /* adjust the width to your liking */
-  height: 150px; /* adjust the height to your liking */
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+}
+
+/* Add responsive design for laptop screens */
+@media (min-width: 768px) {
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Add responsive design for larger laptop screens */
+@media (min-width: 1024px) {
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
 }
